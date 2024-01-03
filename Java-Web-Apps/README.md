@@ -1,4 +1,13 @@
 ## Java-Web-Apps ##
+This script does the following:
+
+Downloads Apache Tomcat from the specified URL.
+Extracts the downloaded archive to the specified installation directory.
+Sets environment variables (CATALINA_HOME and updates PATH).
+Starts Apache Tomcat using the startup.sh script.
+Displays information about the running Tomcat instance.
+Please note that you might need to adjust the script based on your preferences and system requirements. Also, make sure to have the necessary permissions to write to the chosen installation directory.
+
 
 ###  Copy the project url.
 ![5](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/bd17e123-23b4-4a52-ab89-684a66842b31)
@@ -7,24 +16,10 @@
 ```
 git clone https://github.com/sampathshivakumar/Java-Web-Apps.git
 
-```
-![6](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/af35d48c-5f1a-4967-9b02-05422ab4a4db)
-
-![7](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/64ae9228-19f5-488e-aacf-cf6adcbf0972)
 
 ### Create a package using mvn cmd.
-```
 mvn clean package 
 
-``` 
-![8](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/b05d6ac7-5146-4e94-8ff4-5f7a7039b2c6)
-
-### war file will be created inside target directory after build is successful.
-![9](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/be0ebc4c-42e6-4523-9dec-2e533baa2163)
-
-### Output.
-Deploy the war file on tomcat server to see the following output.
-![output](https://github.com/sampathshivakumar/Java-Web-Apps/assets/119833411/41905126-b51d-4b86-b62b-580c87aeaadf)
 
 
 
