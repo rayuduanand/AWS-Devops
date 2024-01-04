@@ -4,14 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd $WORKSPACE/pipeline/'
-                sh 'mvn -Denforcer.skip=true clean package'
+                sh 'cd $WORKSPACE/pipeline/' && 'mvn -Denforcer.skip=true clean package'
             }
         }
         stage('Test') {
             steps {
-                sh 'cd $WORKSPACE/pipeline/'
-                sh 'mvn test -Denforcer.skip=true'
+                sh 'cd $WORKSPACE/pipeline/' && 'mvn test -Denforcer.skip=true'
             }
             post {
                 always {
