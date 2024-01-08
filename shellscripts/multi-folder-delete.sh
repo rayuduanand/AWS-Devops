@@ -6,26 +6,23 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
-# Function to create a folder
-create_folder() {
+# Function to delete a folder
+delete_folder() {
     local folder_name="$1"
 
-    # Check if the folder already exists
+    # Check if the folder exists
     if [ -d "$folder_name" ]; then
-        echo "Folder '$folder_name' already exists."
-        return
+        # Delete folder
+        rm -r "$folder_name"
+        echo "Folder '$folder_name' deleted successfully."
+    else
+        echo "Folder '$folder_name' does not exist."
     fi
-
-    # Create folder
-    mkdir "$folder_name"
-
-    # Display information
-    echo "Folder '$folder_name' created successfully."
 }
 
 # Read folder names from the file
 while IFS= read -r folder_name; do
-    create_folder "$folder_name"
+    delete_folder "$folder_name"
 done < folderlist.txt
 
 # Note: Make sure that folderlist.txt contains one folder name per line
@@ -35,3 +32,4 @@ done < folderlist.txt
 # ...
 
 # Additional checks and validations can be added based on your specific requirements.
+
