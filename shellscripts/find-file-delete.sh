@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Specify the directory path and size threshold (in megabytes)
-directory="/path/to/directory"
-size_threshold=100
+directory="$1"
+size_threshold=5
 
 # Check if the script is run with appropriate permissions
 if [ "$EUID" -ne 0 ]; then

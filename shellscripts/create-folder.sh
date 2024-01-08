@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the folder name
-FOLDER_NAME="jenkins"
+FOLDER_NAME="$1"
 
 # Create the folder
 mkdir -p "$FOLDER_NAME"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the number of files to delete
-num_files=5
+num_files=10
 
 # Use a for loop to delete files
 for ((i = 1; i <= num_files; i++)); do
