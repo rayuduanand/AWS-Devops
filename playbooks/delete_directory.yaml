@@ -1,0 +1,19 @@
+---
+- name: delete directory
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  tasks:
+    - name: delet directory - JAy
+      file:
+        path: /opt/Jay
+        state: absent
+    - name: delete directory - Karthik
+      file:
+        path: /opt/karthik
+        state: absent
+    - name: delete directory - Lakshmi
+      file:
+        path: /opt/lakshmi
+        state: absent
