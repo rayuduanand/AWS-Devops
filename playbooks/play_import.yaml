@@ -1,0 +1,5 @@
+# playbook_with_import.yml
+- name: Playbook with import_tasks
+  hosts: localhost
+  tasks:
+    - import_tasks: tasks_to_import.yml

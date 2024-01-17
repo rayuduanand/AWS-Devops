@@ -1,0 +1,6 @@
+# playbook_with_include.yml
+- name: Playbook with include_tasks
+  hosts: localhost
+  tasks:
+    - include_tasks: include_tasks.yml
+      when: some_condition_is_true

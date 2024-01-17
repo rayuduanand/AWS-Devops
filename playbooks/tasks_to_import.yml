@@ -1,0 +1,8 @@
+# tasks_to_import.yml
+- name: Task 1 imported statically
+  debug:
+    msg: "This is Task 1"
+
+- name: Task 2 imported statically
+  debug:
+    msg: "This is Task 2"

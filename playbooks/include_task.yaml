@@ -1,0 +1,8 @@
+# tasks_to_include.yml
+- name: Task 1 included dynamically
+  debug:
+    msg: "This is Task 1"
+
+- name: Task 2 included dynamically
+  debug:
+    msg: "This is Task 2"

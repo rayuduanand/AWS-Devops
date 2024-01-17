@@ -11,6 +11,8 @@
       loop:
         - httpd  # Apache package name on Red Hat
         - nginx  # Nginx package name on Red Hat
+        - java
+        - python
 
     - name: Start and enable Apache
       service:
