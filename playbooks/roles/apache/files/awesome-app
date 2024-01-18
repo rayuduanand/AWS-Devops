@@ -1,0 +1,6 @@
+---
+- name: Run awesome-app-role
+  hosts: all
+  become: true  # Optional, if you need to run tasks as a privileged user
+  roles:
+    - awesome-app-role
